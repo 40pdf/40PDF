@@ -1,0 +1,150 @@
+{
+ "cleanUrls": true,
+ "trailingSlash": false,
+ "redirects": [
+  {
+   "source": "/tool.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "t",
+     "value": "remove-pdf-pages"
+    }
+   ],
+   "destination": "/remove-pages",
+   "permanent": true
+  },
+  {
+   "source": "/tool.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "t",
+     "value": "extract-pdf-pages"
+    }
+   ],
+   "destination": "/extract-pages",
+   "permanent": true
+  },
+  {
+   "source": "/tool.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "t",
+     "value": "duplicate-pdf-pages"
+    }
+   ],
+   "destination": "/duplicate-pages",
+   "permanent": true
+  },
+  {
+   "source": "/tool.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "t",
+     "value": "pdf-metadata"
+    }
+   ],
+   "destination": "/pdf-info",
+   "permanent": true
+  },
+  {
+   "source": "/tool.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "t",
+     "value": "add-watermark"
+    }
+   ],
+   "destination": "/watermark-pdf",
+   "permanent": true
+  },
+  {
+   "source": "/tool.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "t",
+     "value": "add-page-numbers"
+    }
+   ],
+   "destination": "/page-numbers",
+   "permanent": true
+  },
+  {
+   "source": "/blog.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "p",
+     "value": "how-to-compress-pdf-without-losing-quality"
+    }
+   ],
+   "destination": "/blog/compress-pdf-without-losing-quality",
+   "permanent": true
+  },
+  {
+   "source": "/blog.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "p",
+     "value": "how-to-merge-pdf-files"
+    }
+   ],
+   "destination": "/blog/how-to-merge-pdf-files",
+   "permanent": true
+  },
+  {
+   "source": "/blog.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "p",
+     "value": "how-to-sign-a-pdf-without-printing"
+    }
+   ],
+   "destination": "/blog/sign-pdf-without-printing",
+   "permanent": true
+  },
+  {
+   "source": "/blog.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "p",
+     "value": "convert-photos-to-pdf-on-your-phone"
+    }
+   ],
+   "destination": "/blog/photos-to-pdf-on-your-phone",
+   "permanent": true
+  },
+  {
+   "source": "/blog.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "p",
+     "value": "how-to-extract-text-from-a-pdf"
+    }
+   ],
+   "destination": "/blog/extract-text-from-pdf",
+   "permanent": true
+  },
+  {
+   "source": "/blog.html",
+   "has": [
+    {
+     "type": "query",
+     "key": "p",
+     "value": "how-to-remove-reorder-rotate-pdf-pages"
+    }
+   ],
+   "destination": "/blog/remove-reorder-rotate-pdf-pages",
+   "permanent": true
+  }
+ ]
+}

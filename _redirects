@@ -1,0 +1,14 @@
+# Netlify / Cloudflare Pages. These platforms already serve /name from name.html.
+/tool.html?t=remove-pdf-pages /remove-pages 301
+/tool.html?t=extract-pdf-pages /extract-pages 301
+/tool.html?t=duplicate-pdf-pages /duplicate-pages 301
+/tool.html?t=pdf-metadata /pdf-info 301
+/tool.html?t=add-watermark /watermark-pdf 301
+/tool.html?t=add-page-numbers /page-numbers 301
+/blog.html?p=how-to-compress-pdf-without-losing-quality /blog/compress-pdf-without-losing-quality 301
+/blog.html?p=how-to-merge-pdf-files /blog/how-to-merge-pdf-files 301
+/blog.html?p=how-to-sign-a-pdf-without-printing /blog/sign-pdf-without-printing 301
+/blog.html?p=convert-photos-to-pdf-on-your-phone /blog/photos-to-pdf-on-your-phone 301
+/blog.html?p=how-to-extract-text-from-a-pdf /blog/extract-text-from-pdf 301
+/blog.html?p=how-to-remove-reorder-rotate-pdf-pages /blog/remove-reorder-rotate-pdf-pages 301
+/index.html / 301
