@@ -362,3 +362,32 @@ body{background-color:#f6f9ff}
 .copy a{color:var(--muted);margin-left:8px;text-decoration:underline}
 @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
+
+/* ===== v4: mobile-first polish (Google crawls the mobile version) ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overflow-wrap:break-word;overflow-x:hidden}
+img,video,canvas{max-width:100%;height:auto}
+a,button,summary,.zone{touch-action:manipulation}
+.btn,button{min-height:46px}
+details summary{min-height:48px;padding-top:14px;padding-bottom:14px}
+.crumbs a{display:inline-block;padding:6px 2px}
+@media(max-width:760px){
+  body{font-size:17px;line-height:1.7}
+  h2{font-size:1.45rem}
+  .field input,.field select,.field textarea,.search input,input,select,textarea{font-size:16px}
+  .nav a{padding:13px 14px}
+  .foot-grid a{padding:10px 0;font-size:1rem}
+  .foot-guides a{display:inline-block;padding:8px 0}
+  .tool-card small,.pop small{font-size:.92rem}
+  .hero-trust span,.trio span{font-size:.9rem}
+  .copy{font-size:.95rem;line-height:1.8}
+  .wrap{padding:0 16px}
+}
+@media(max-width:380px){
+  .mega{font-size:4.2rem}
+  .btn.big{padding:14px 20px}
+}
+
+/* v4: tool H1 now carries the long-tail keyword (longer text) */
+.tool-head h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.08}
+@media(max-width:560px){.tool-head h1{font-size:clamp(1.75rem,8.2vw,2.2rem)}}

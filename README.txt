@@ -15,10 +15,15 @@ UPLOAD
   Test on the server. Links start with "/", so double-clicking the files on a PC will not show styles.
 
 AFTER UPLOAD
-  1. Search Console > Sitemaps > submit https://40pdf.com/sitemap.xml
+  1. Search Console > Sitemaps > submit https://www.40pdf.com/sitemap.xml
   2. URL Inspection > request indexing for /, /tools, /merge-pdf, /compress-pdf
   3. Old links (tool.html?t=..., blog.html?p=...) 301-redirect to the new URLs.
 
 EDITING
-  Text for each tool/blog lives in the build folder (c_*.py, b_part*.py). Run: python3 build.py && python3 make_images.py
+  Edit the .html files directly (the old build scripts are not part of this package, do not regenerate over these files).
   Colors: style.css, top of the file (:root).
+
+HOST: www.40pdf.com is the one official address. 40pdf.com 301-redirects to it.
+If you use Vercel/Netlify/Cloudflare, ALSO set the domain redirect in the dashboard (non-www -> www).
+Search Console: add a Domain property for 40pdf.com, submit https://www.40pdf.com/sitemap.xml
+CONTACT EMAIL: 40pdftools@gmail.com

@@ -1,4 +1,6 @@
-# Netlify / Cloudflare Pages. These platforms already serve /name from name.html.
+# Netlify / Cloudflare Pages. (If you use Cloudflare, also set a Redirect Rule: 40pdf.com/* -> https://www.40pdf.com/$1 301)
+https://40pdf.com/* https://www.40pdf.com/:splat 301!
+#  These platforms already serve /name from name.html.
 /tool.html?t=remove-pdf-pages /remove-pages 301
 /tool.html?t=extract-pdf-pages /extract-pages 301
 /tool.html?t=duplicate-pdf-pages /duplicate-pages 301
