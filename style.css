@@ -391,3 +391,6 @@ details summary{min-height:48px;padding-top:14px;padding-bottom:14px}
 /* v4: tool H1 now carries the long-tail keyword (longer text) */
 .tool-head h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.08}
 @media(max-width:560px){.tool-head h1{font-size:clamp(1.75rem,8.2vw,2.2rem)}}
+
+/* v5: round image logo (header + footer) */
+.logo img{width:36px;height:36px;border-radius:50%;flex:none;display:block}

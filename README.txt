@@ -27,3 +27,12 @@ HOST: www.40pdf.com is the one official address. 40pdf.com 301-redirects to it.
 If you use Vercel/Netlify/Cloudflare, ALSO set the domain redirect in the dashboard (non-www -> www).
 Search Console: add a Domain property for 40pdf.com, submit https://www.40pdf.com/sitemap.xml
 CONTACT EMAIL: 40pdftools@gmail.com
+
+SITEMAP (auto)
+  After you add or edit any page, run:   python update-sitemap.py
+  It rebuilds sitemap.xml from all .html files (dates + images), then upload sitemap.xml.
+
+ICONS / LOGO
+  favicon.ico, favicon-48.png, icon-192.png, icon-512.png = round logo (transparent corners)
+  apple-touch-icon.png = 180x180 full square, no transparency (no white corners on iPhone)
+  social-image.jpg = link-preview image (1200x630) with the logo
