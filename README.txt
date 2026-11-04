@@ -21,7 +21,8 @@ AFTER UPLOAD
 
 EDITING
   Edit the .html files directly (the old build scripts are not part of this package, do not regenerate over these files).
-  Colors: style.css, top of the file (:root).
+  Colors: style.css, top of the file (:root). The CSS is INLINED in every page (so Google always sees it).
+  After editing style.css run:   python inline-css.py
 
 HOST: www.40pdf.com is the one official address. 40pdf.com 301-redirects to it.
 If you use Vercel/Netlify/Cloudflare, ALSO set the domain redirect in the dashboard (non-www -> www).
@@ -32,7 +33,8 @@ SITEMAP (auto)
   After you add or edit any page, run:   python update-sitemap.py
   It rebuilds sitemap.xml from all .html files (dates + images), then upload sitemap.xml.
 
-ICONS / LOGO
-  favicon.ico, favicon-48.png, icon-192.png, icon-512.png = round logo (transparent corners)
-  apple-touch-icon.png = 180x180 full square, no transparency (no white corners on iPhone)
+ICONS / LOGO (all WebP, 10-40 KB)
+  icon-512.webp (36 KB, logo for schema), icon-192.webp (14 KB, header logo + icon), favicon-96.webp (11 KB, favicon)
+  favicon.ico (17 KB) and apple-touch-icon.png (32 KB) are kept on purpose: browsers/crawlers request /favicon.ico
+  automatically and iPhone does not accept WebP for the home-screen icon.
   social-image.jpg = link-preview image (1200x630) with the logo
