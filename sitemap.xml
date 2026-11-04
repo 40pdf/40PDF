@@ -1,206 +1,203 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://www.40pdf.com/</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/tools</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/add-blank-page</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/compress-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/crop-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/delete-blank-pages</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/duplicate-pages</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/edit-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/excel-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/extract-pages</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/html-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/image-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/jpg-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/merge-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/organize-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/page-numbers</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/pdf-info</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/pdf-to-jpg</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/pdf-to-png</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/pdf-to-text</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/png-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/remove-metadata</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/remove-pages</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/repair-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/reverse-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/rotate-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/scan-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/sign-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/split-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/unlock-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/watermark-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/add-page-numbers-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/add-watermark-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/compress-pdf-without-losing-quality</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/convert-excel-to-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/convert-pdf-to-jpg-or-png</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/extract-text-from-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/how-to-merge-pdf-files</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/photos-to-pdf-on-your-phone</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/remove-pdf-metadata-before-sharing</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/remove-reorder-rotate-pdf-pages</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/repair-corrupted-pdf</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/sign-pdf-without-printing</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/split-pdf-into-pages</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/blog/unlock-pdf-for-printing-and-editing</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/about</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/contact</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/privacy</loc>
-<changefreq>daily</changefreq>
-</url>
-<url>
-<loc>https://www.40pdf.com/terms</loc>
-<changefreq>daily</changefreq>
-</url>
-
+  <url>
+    <loc>https://www.40pdf.com/</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/tools</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/add-page-numbers-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/add-watermark-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/compress-pdf-without-losing-quality</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/convert-excel-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/convert-pdf-to-jpg-or-png</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/extract-text-from-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/how-to-merge-pdf-files</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/photos-to-pdf-on-your-phone</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/remove-pdf-metadata-before-sharing</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/remove-reorder-rotate-pdf-pages</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/repair-corrupted-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/sign-pdf-without-printing</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/split-pdf-into-pages</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/blog/unlock-pdf-for-printing-and-editing</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/about</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/add-blank-page</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/compress-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/contact</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/crop-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/delete-blank-pages</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/duplicate-pages</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/edit-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/excel-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/extract-pages</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/html-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/image-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/jpg-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/merge-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/organize-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/page-numbers</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/pdf-info</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/pdf-to-jpg</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/pdf-to-png</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/pdf-to-text</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/png-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/privacy</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/remove-metadata</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/remove-pages</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/repair-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/reverse-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/rotate-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/scan-to-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/sign-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/split-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/terms</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/unlock-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://www.40pdf.com/watermark-pdf</loc>
+    <changefreq>daily</changefreq>
+  </url>
 </urlset>
