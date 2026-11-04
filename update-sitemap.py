@@ -1,52 +1,30 @@
-﻿import os
-import glob
-import re
-import html
+#!/usr/bin/env python3
+"""Rebuild sitemap.xml (simple format: <loc> + <changefreq>daily</changefreq> only).
+
+Usage (run inside the site folder):   python update-sitemap.py
+Order: home, tools, blog, blog posts (A-Z), then all other pages (A-Z).
+404.html, tool.html and any page with a noindex tag are skipped.
+"""
+import os, re, glob
 
 BASE = "https://www.40pdf.com"
 SKIP = {"404.html", "tool.html"}
-
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-pages = [
-    p for p in glob.glob("*.html") if p not in SKIP
-] + glob.glob("blog/*.html")
+def indexable(path):
+    html = open(path, encoding="utf-8").read()
+    return not re.search(r'<meta[^>]+name="robots"[^>]+noindex', html, re.I)
 
-pages = sorted(set(pages), key=lambda p: (
-    0 if p == "index.html" else
-    1 if p == "tools.html" else
-    2 if p.startswith("blog") else 3,
-    p
-))
+pages = [p for p in glob.glob("*.html") if p not in SKIP and indexable(p)]
+slugs = sorted(p[:-5] for p in pages)
+posts = sorted("blog/" + os.path.basename(p)[:-5] for p in glob.glob("blog/*.html") if indexable(p))
+head = ["", "tools", "blog"]
+rest = [s for s in slugs if s not in ("index", "tools", "blog")]
+urls = [f"{BASE}/{s}" if s else f"{BASE}/" for s in head] + [f"{BASE}/{s}" for s in posts + rest]
 
-out = [
-    '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-]
-
-count = 0
-
-for page in pages:
-    with open(page, encoding="utf-8") as f:
-        content = f.read()
-
-    if re.search(r'<meta[^>]+name=["\']robots["\'][^>]+content=["\'][^"\']*noindex', content, re.I):
-        continue
-
-    path = page.replace("\\", "/")
-    url = BASE + "/" if path == "index.html" else BASE + "/" + path[:-5]
-
-    out.extend([
-        "  <url>",
-        f"    <loc>{html.escape(url)}</loc>",
-        "    <changefreq>daily</changefreq>",
-        "  </url>"
-    ])
-    count += 1
-
+out = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+for u in urls:
+    out += ["<url>", f"<loc>{u}</loc>", "<changefreq>daily</changefreq>", "</url>"]
 out.append("</urlset>")
-
-with open("sitemap.xml", "w", encoding="utf-8") as f:
-    f.write("\n".join(out) + "\n")
-
-print(f"Simple sitemap generated: {count} URLs")
+open("sitemap.xml", "w", encoding="utf-8").write("\n".join(out) + "\n")
+print("sitemap.xml updated:", len(urls), "URLs")

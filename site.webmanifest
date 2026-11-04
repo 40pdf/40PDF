@@ -1,0 +1,17 @@
+{
+  "name": "40PDF – Free Online PDF Tools",
+  "short_name": "40PDF",
+  "description": "Merge, split, compress, sign and convert PDF files in your browser. No upload, no signup, no watermark.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "lang": "en",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/maskable-icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
