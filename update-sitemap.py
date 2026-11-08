@@ -1,30 +1,53 @@
 #!/usr/bin/env python3
-"""Rebuild sitemap.xml (simple format: <loc> + <changefreq>daily</changefreq> only).
-
-Usage (run inside the site folder):   python update-sitemap.py
-Order: home, tools, blog, blog posts (A-Z), then all other pages (A-Z).
-404.html, tool.html and any page with a noindex tag are skipped.
-"""
+"""Rebuild the 40PDF XML sitemap from indexable HTML pages."""
 import os, re, glob
+from datetime import datetime
 
 BASE = "https://www.40pdf.com"
 SKIP = {"404.html", "tool.html"}
+SMALL = {"about", "contact", "privacy", "terms"}
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def indexable(path):
-    html = open(path, encoding="utf-8").read()
-    return not re.search(r'<meta[^>]+name="robots"[^>]+noindex', html, re.I)
+    with open(path, encoding="utf-8") as f:
+        html = f.read()
+    return not re.search(r'<meta[^>]+name="robots"[^>]+content="[^"]*noindex', html, re.I)
+
+def lastmod(path):
+    return datetime.fromtimestamp(os.path.getmtime(path)).date().isoformat()
 
 pages = [p for p in glob.glob("*.html") if p not in SKIP and indexable(p)]
-slugs = sorted(p[:-5] for p in pages)
-posts = sorted("blog/" + os.path.basename(p)[:-5] for p in glob.glob("blog/*.html") if indexable(p))
-head = ["", "tools", "blog"]
-rest = [s for s in slugs if s not in ("index", "tools", "blog")]
-urls = [f"{BASE}/{s}" if s else f"{BASE}/" for s in head] + [f"{BASE}/{s}" for s in posts + rest]
+blog_pages = [p for p in glob.glob("blog/*.html") if indexable(p)]
 
-out = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-for u in urls:
-    out += ["<url>", f"<loc>{u}</loc>", "<changefreq>daily</changefreq>", "</url>"]
+def page_url(path):
+    return BASE + "/" if path == "index.html" else BASE + "/" + path[:-5]
+
+ordered = [p for p in ("index.html", "tools.html", "blog.html") if p in pages]
+ordered += sorted(blog_pages)
+ordered += sorted(p for p in pages if p not in {"index.html", "tools.html", "blog.html"})
+
+entries = []
+for path in ordered:
+    if path == "index.html":
+        freq, priority = "weekly", "1.0"
+    elif path == "tools.html":
+        freq, priority = "weekly", "0.9"
+    elif path == "blog.html":
+        freq, priority = "weekly", "0.7"
+    elif path.startswith("blog/"):
+        freq, priority = "monthly", "0.6"
+    elif path[:-5] in SMALL:
+        freq, priority = "yearly", "0.3"
+    else:
+        freq, priority = "monthly", "0.9"
+    entries.append((page_url(path), lastmod(path), freq, priority))
+
+out = ['<?xml version="1.0" encoding="UTF-8"?>',
+       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+for url, modified, freq, priority in entries:
+    out += ["  <url>", f"    <loc>{url}</loc>", f"    <lastmod>{modified}</lastmod>",
+            f"    <changefreq>{freq}</changefreq>", f"    <priority>{priority}</priority>", "  </url>"]
 out.append("</urlset>")
-open("sitemap.xml", "w", encoding="utf-8").write("\n".join(out) + "\n")
-print("sitemap.xml updated:", len(urls), "URLs")
+with open("sitemap.xml", "w", encoding="utf-8", newline="\n") as f:
+    f.write("\n".join(out) + "\n")
+print("sitemap.xml updated:", len(entries), "URLs")
